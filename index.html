@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aula Java Script</title>
+<link rel="stylesheet" href="CSS/style.css">
+
+  <script>
+    function Somar() 
+    {
+      let num1 = document.getElementById("num1").value;
+      let num2 = document.getElementById("num2").value;
+      let soma = parseInt (num1) + parseInt(num2);
+      document.getElementById("resultado").innerHTML = soma;
+      
+      alert("Esta multiplicação é: " + soma);
+      document.getElementById("resultado").innerHTML = soma;
+    }
+
+    function Multiplicar() 
+    {
+      let num1 = document.getElementById("num1").value;
+      let num2 = document.getElementById("num2").value;
+      let multiplicação = parseInt (num1) * parseInt(num2);
+      document.getElementById("resultado").innerHTML = multiplicação;
+
+      alert("Esta multiplicação é: " * multiplicação);
+      document.getElementById("resultado").innerHTML = multiplicação;
+    }
+
+    function Subtrair() 
+    {
+      let num1 = document.getElementById("num1").value;
+      let num2 = document.getElementById("num2").value;
+      let subtração = parseInt (num1) - parseInt(num2);
+      document.getElementById("resultado").innerHTML = subtração;
+
+      alert("Esta subtração é: " - subtração);
+      document.getElementById("resultado").innerHTML = subtrção;
+    }
+
+    function Dividir() 
+    {
+      let num1 = document.getElementById("num1").value;
+      let num2 = document.getElementById("num2").value;
+      let divisão = parseInt (num1) / parseInt(num2);
+      document.getElementById("resultado").innerHTML = divisão;
+      alert("Esta divisão é: " / divisão);
+      document.getElementById("resultado").innerHTML = divisão;
+    }
+  </script>
+
+
+</head>
+<body>
+  <input type="text" id="num1" name="num1">
+  <input type="text" id="num2" name="num2">
+  <button onclick="Somar()">Calcular a soma</button>
+  <p> O resultado da soma é: </p>
+  <p id="resultado">R:</p>
+
+  <input type="text" id="num1" name="num1">
+  <input type="text" id="num2" name="num2">
+  <button onclick="Multiplicar()">Calcular a multiplicação</button>
+  <p> O resultado da multiplicação é: </p>
+  <p id="resultado">R:</p>
+
+  <input type="text" id="num1" name="num1">
+  <input type="text" id="num2" name="num2">
+  <button onclick="Subtrair()">Calcular a subtração</button>
+  <p> O resultado da subtração é: </p>
+  <p id="resultado">R:</p>
+
+  <input type="text" id="num1" name="num1">
+  <input type="text" id="num2" name="num2">
+  <button onclick="Dividir()">Calcular a divisão</button>
+  <p> O resultado da divisão é: </p>
+  <p id="resultado">R:</p>
+</body>
+</html>
