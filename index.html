@@ -14,7 +14,7 @@
       let soma = parseInt (num1) + parseInt(num2);
       document.getElementById("resultado").innerHTML = soma;
       
-      alert("Esta multiplicação é: " + soma);
+      alert("Esta soma é: " + soma);
       document.getElementById("resultado").innerHTML = soma;
     }
 
@@ -22,11 +22,10 @@
     {
       let num1 = document.getElementById("num1").value;
       let num2 = document.getElementById("num2").value;
-      let multiplicação = parseInt (num1) * parseInt(num2);
-      document.getElementById("resultado").innerHTML = multiplicação;
+      let multiplicacao = parseInt (num1) * parseInt(num2);
 
-      alert("Esta multiplicação é: " * multiplicação);
-      document.getElementById("resultado").innerHTML = multiplicação;
+      alert("Esta multiplicação é: " + multiplicacao);
+      document.getElementById("resultado").innerHTML = multiplicacao;
     }
 
     function Subtrair() 
@@ -36,7 +35,7 @@
       let subtração = parseInt (num1) - parseInt(num2);
       document.getElementById("resultado").innerHTML = subtração;
 
-      alert("Esta subtração é: " - subtração);
+      alert("Esta subtração é: " + subtração);
       document.getElementById("resultado").innerHTML = subtrção;
     }
 
@@ -46,7 +45,7 @@
       let num2 = document.getElementById("num2").value;
       let divisão = parseInt (num1) / parseInt(num2);
       document.getElementById("resultado").innerHTML = divisão;
-      alert("Esta divisão é: " / divisão);
+      alert("Esta divisão é: " + divisão);
       document.getElementById("resultado").innerHTML = divisão;
     }
   </script>
@@ -58,22 +57,13 @@
   <input type="text" id="num2" name="num2">
   <button onclick="Somar()">Calcular a soma</button>
   <p> O resultado da soma é: </p>
-  <p id="resultado">R:</p>
-
-  <input type="text" id="num1" name="num1">
-  <input type="text" id="num2" name="num2">
+  
   <button onclick="Multiplicar()">Calcular a multiplicação</button>
   <p> O resultado da multiplicação é: </p>
-  <p id="resultado">R:</p>
 
-  <input type="text" id="num1" name="num1">
-  <input type="text" id="num2" name="num2">
   <button onclick="Subtrair()">Calcular a subtração</button>
   <p> O resultado da subtração é: </p>
-  <p id="resultado">R:</p>
 
-  <input type="text" id="num1" name="num1">
-  <input type="text" id="num2" name="num2">
   <button onclick="Dividir()">Calcular a divisão</button>
   <p> O resultado da divisão é: </p>
   <p id="resultado">R:</p>
